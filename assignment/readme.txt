@@ -4,5 +4,5 @@
 
 4.typescript
 5.html assignment
-6.end
+6.css assignemnt is going
 
