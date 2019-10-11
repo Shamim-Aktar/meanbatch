@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Using prompt</title>
+</head>
+<body>
+ 	<div id="agedisplay"></div>
+
+	<script type="text/javascript">
+		
+		var name = prompt("Please Enter your first name:")
+		var DOB = prompt("Please enter birth year:")
+		console.log(DOB)
+
+		function getAge(DOB) {
+
+			var date=new Date()
+			currentYear=date.getFullYear()
+
+			let age=currentYear-DOB
+
+			return age;
+  
+    }
+document.querySelector('#agedisplay').innerHTML=name+ " "+ "is"+ " "+ getAge(DOB)+" "+"years old"
+	</script>
+
+</body>
+</html>

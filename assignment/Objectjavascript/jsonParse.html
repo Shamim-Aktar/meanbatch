@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1>Demo: json parse</h1>
+	
+	<p id="p1"></p>
+	
+	<script>
+
+		let str = '{"firstName":"Bill","lastName":"Gates"}';
+
+		//var obj = eval(str);
+	let obj = JSON.parse(str)
+	console.log(str)
+		console.log(obj)
+
+		document.getElementById("p1").innerHTML = obj.firstName + " " + obj.lastName; 
+
+
+
+		let square=function(x){
+return x*x
+}
+let double=function(x){
+return x*2
+}
+
+let composedvalue=square(double(5))
+console.log(composedvalue)
+
+
+
+
+
+
+	
+		
+
+
+let composedvalue1=square(double(10))
+console.log(composedvalue1)
+
+let composedvalue2=double(square(5))
+console.log(composedvalue2)
+
+let composedvalue3=double(square(10))
+console.log(composedvalue3)
+
+
+
+
+    </script>
+</body>
+</html>

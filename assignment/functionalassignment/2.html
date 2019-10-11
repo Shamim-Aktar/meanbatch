@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Functional Assignemnt</title>
+</head>
+<body>
+<p></p>
+
+
+<script type="text/javascript">
+	
+		let square=function(x){
+return x*x
+}
+let double=function(x){
+return x*2
+}
+
+let composedvalue=double(square(10))
+console.log(composedvalue)
+document.querySelector('p').innerHTML='Composed value' +'is'+ ' '+composedvalue
+
+/*let composedvalue1=square(double(10))
+console.log(composedvalue1)*/
+</script>
+</body>
+</html>

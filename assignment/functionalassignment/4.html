@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p id="element"></p>
+<p id="sqrt"></p>
+
+
+
+	<script type="text/javascript">
+		let arr=[1,2,3,4]
+function map(arr) {
+
+    ret= [];
+
+    for (var i = 0, len = arr.length; i < len; i++) {
+        ret.push(arr[i] * arr[i]);
+    }
+
+    return ret;     
+}
+
+let arr1=[4,9,16,25]
+
+const squareroot=function(arr1){
+	let res=[]
+	   for (var i = 0, len = arr1.length; i < len; i++) {
+        res.push(Math.sqrt(arr1[i]));
+    }	
+
+    return res
+}
+
+document.querySelector('#element').innerHTML=map(arr)
+document.querySelector('#sqrt').innerHTML=squareroot(arr1)
+
+	</script>
+
+</body>
+</html>
